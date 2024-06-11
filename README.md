@@ -1,8 +1,8 @@
 # trabajo-final-samu-expresion
 
 ## DESCRIPCIÓN: 
-    Subrama de Andrés Bernal (Scrum Master)
+    Página de compra de Samu Expresión.
 
 ## AUTOR:
-    Andrés Bernal
+    Andrés Bernal (Scrum Master)
 
