@@ -7,8 +7,63 @@
 }
 
 
+:root{
+    --tituloProductos:"Rubik", sans-serif; 
+    --tituloSecundario:'Raleway', sans-serif;
+    --colorBoton: #E6AEEA;
+    --colorTitulo: #C224CE; 
+    --colortexto: #4B376C;
+
+                                                
+}
+
+
+/*cestilos header */
+   
 header{
     background-color: blueviolet;
     width: 100vw;
     height: 100px;
+}
+
+/*titulo productos*/
+
+.titulo{
+    font-family: var(--tituloProductos);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+    color: var(--colorTitulo);
+    
+    
+
+   
+}
+
+.tituloProducto{
+    font-family: var(--tituloSecundario);
+    color: var(--colortexto);
+
+}
+
+.precio{
+    font-family: var(--tituloSecundario);
+    font-weight: bold;
+    color: var(--colortexto);
+
+}
+
+.añadir{
+    font-family: var(--tituloProductos);
+    gap: 5%;
+    color: var(--colortexto);
+    background-color: var(--colorBoton);
+    
+    
+}
+
+.misProductos img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8%;
 }
