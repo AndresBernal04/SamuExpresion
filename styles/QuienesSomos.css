@@ -1,0 +1,204 @@
+/* importaciones de fuente */
+@import url('https://fonts.cdnfonts.com/css/ysabeau-sc');
+@import url('https://fonts.cdnfonts.com/css/quito');
+
+
+:root {
+
+    /* paleta de colores */
+
+    --colorHeader: #4B376C;
+    --colorFooter: #4B376C;
+    --colorFondo: #E7B5D0;
+    --colorTitulos: #C224CE;
+
+
+
+    /* fuentes */
+    /* --textTitle: 'Ysabeau SC', sans-serif;
+    --textContent: 'Quito', sans-serif */
+}
+
+/* margenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+
+header {
+    background-color: var(--colorHeader);
+    width: 100%;
+    height: 100%;
+}
+
+.menuNav {
+    /* border: solid 2px aqua; */
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.listaMenu {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.listaMenu a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 10px;
+}
+
+.carrito {
+    width: 20px;
+}
+
+
+.titulo1 {
+    color: var(--colorTitulos);
+    text-align: center;
+    padding: 18px;
+}
+
+
+main {
+
+    /* border: solid green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: auto;
+}
+
+
+.contenedorPrincipal {
+    background-color: var(--colorFondo);
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+
+.contenedorImagenes {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 10px;
+
+    /* height: auto;
+    width: 100%; */
+}
+
+.contenedorImagenes img,
+.contenedorImagenes p {
+    width: 40%;
+    height: 100%;
+}
+
+/* .contenedorImagenes p {
+    width: 100%;
+    height: 100%;
+} */
+
+
+
+.textos {
+    width: 70%;
+    height: 65%;
+    display: grid;
+    /* grid-template-rows:1fr;
+        grid-template-columns:1fr */
+    gap: 20px;
+}
+
+.titulo2 {
+    color: var(--colorTitulos);
+    text-align: center;
+    padding: 15px;
+}
+
+.titulo3 {
+    color: var(--colorTitulos);
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+/* contenedor imagenes3 */
+
+.contenedor-slider {
+    width: 80%;
+    height: 5%;
+    margin: 25px auto;
+    overflow-x: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.contenedor-slider img {
+    height: 100%;
+    width: 100%;
+}
+
+/* cierre de mi slider */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* diseño para celular */
+@media screen and (max-width:490px) {
+    .listamenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centradoSeccion1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-img {
+        display: flex;
+        flex-direction: column;
+    }
+}
