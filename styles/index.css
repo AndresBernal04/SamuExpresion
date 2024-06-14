@@ -3,7 +3,7 @@
 @import url('https://fonts.cdnfonts.com/css/quito');
 
 
-:root{
+:root {
 
     /* paleta de colores */
 
@@ -12,11 +12,13 @@
     --colorFondo: #E7B5D0;
     --colorTitulos: #C224CE;
 
-    /* fuentes */
-    --textTitle: 'Ysabeau SC', sans-serif;
-    --textContent: 'Quito', sans-serif
 
+
+    /* fuentes */
+    /* --textTitle: 'Ysabeau SC', sans-serif;
+    --textContent: 'Quito', sans-serif */
 }
+
 /* margenes */
 * {
     margin: 0;
@@ -30,16 +32,16 @@ body {
 }
 
 
-header{
-background-color: var(--colorHeader);
-width: 100vw;
-height: auto;
+header {
+    background-color: var(--colorHeader);
+    width: 100%;
+    height: 100%;
 }
 
 .menuNav {
-border: solid 2px aqua;
+    /* border: solid 2px aqua; */
     width: 100%;
-    height: 90%;
+    height: 100%;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -47,7 +49,7 @@ border: solid 2px aqua;
     gap: 20px;
 }
 
-.listaMenu{
+.listaMenu {
     display: flex;
     gap: 50px;
     list-style: none;
@@ -59,13 +61,12 @@ border: solid 2px aqua;
     font-size: 10px;
 }
 
-.carrito{
+.carrito {
     width: 20px;
 }
 
 
-.titulo1{
-    /* border: solid 5px green; */
+.titulo1 {
     color: var(--colorTitulos);
     text-align: center;
     padding: 18px;
@@ -85,53 +86,54 @@ main {
 }
 
 
-.contenedorPrincipal{
-    border: 5px solid red;
+.contenedorPrincipal {
+    background-color: var(--colorFondo);
+    border: 2px solid red;
     width: 100%;
     height: 100%;
-    margin: 25px;
+    margin: 10px;
 }
 
 
-.contenedorImagenes{
+.contenedorImagenes {
     display: flex;
     gap: 50px;
     align-items: center;
     padding: 10px;
-    background-color: var(--colorFondo);
+
     /* height: auto;
     width: 100%; */
 }
 
 .contenedorImagenes img,
 .contenedorImagenes p {
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 
-.contenedorImagenes p {
-    width: 50%;
+/* .contenedorImagenes p {
+    width: 100%;
     height: 100%;
+} */
+
+
+
+.textos {
+    width: 70%;
+    height: 65%;
+    display: grid;
+    /* grid-template-rows:1fr;
+        grid-template-columns:1fr */
+    gap: 20px;
 }
 
-
-
-.textos{
-        width: 70%;
-        height: 65%;
-        /* display: grid;
-        grid-template-rows:
-        grid-template-columns: */
-        gap: 20px;
-}
-
-.titulo2{
+.titulo2 {
     color: var(--colorTitulos);
     text-align: center;
     padding: 15px;
 }
 
-.titulo3{
+.titulo3 {
     color: var(--colorTitulos);
     text-align: center;
     padding: 15px;
@@ -143,43 +145,60 @@ main {
 
 
 
-/* contenedor slider */
+/* contenedor imagenes3 */
 
-.contenedor-slider{
+.contenedor-slider {
     width: 80%;
-    height: 80%;
+    height: 5%;
     margin: 25px auto;
     overflow-x: hidden;
 }
 
-.slider{
+.slider {
     width: 100%;
     height: 100%;
-    display: flex;
-    animation-name: deslizar;
-    animation-duration: 600s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    }
-
-@keyframes deslizar {
-    from{
-        transform: translateX(0%);
-    }
-    50%{
-        transform: translatex(-150%);       
-    }
-    to{
-        transform: translateX(-300%);
-    }
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
-.contenedor-slider img{
+.contenedor-slider img {
     height: 100%;
     width: 100%;
 }
 
+/* cierre de mi slider */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* diseño para celular */
+@media screen and (max-width:490px) {
+    .listamenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centradoSeccion1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-img {
+        display: flex;
+        flex-direction: column;
+    }
+}
