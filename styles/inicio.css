@@ -32,6 +32,8 @@
 }
 
 
+
+/* INICIO BODY */
 body{
     background-color:#f0f0f0;
     width: 100%;
@@ -54,7 +56,7 @@ header{
     font-weight: bold;
 }
 
-.mi_navbark a :hover{
+.mi_navbark :hover{
    color: var(--color_titulos);
 }
 
@@ -75,8 +77,8 @@ main{
 }
 
 
+/* SECCIÓN CARDS */
 .container_cards{
-    border: solid 5px green;
     width: 100%;
     height: auto;
     padding: 3%;
@@ -85,8 +87,10 @@ main{
 
 .mis_cards{
     min-width: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
+    text-align: center;
     gap: 10%;
 }
 
@@ -108,7 +112,7 @@ main{
 
 
 .card_titulo{
-    font-size: 30px;
+    font-size: 31px;
     color: var(--color_letra);
     font-family: var(--text_subtitles);
     font-weight: bold;
@@ -123,13 +127,13 @@ main{
 
 
 
+/* SECCIÓN TRABAJEMOS JUNTOS */
+
 .contenido{
-    border: solid red 5px;
     width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
-
 
 .trabajemos_juntos{
     display: flex;
@@ -162,9 +166,10 @@ main{
 
 
 
-
+/* SECCIÓN LO MÁS DESTACADO */
 .contenedor_principal{
     font-family: var(--text_subtitles);
+    width: 100vw;
 }
 
 .contenedor_principal h2{
@@ -177,11 +182,11 @@ main{
 }
 
 .contenedor_imagenes{
-    border: 5px solid blue;
     margin-top: 40px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
+  
 }
 
 .contenedor_imagenes img{
@@ -246,7 +251,6 @@ footer{
     height: 150px;
     width: 100%;
     padding: 20px;
-    border: 5px solid red;
     background-color: #4B376C;
     color: var(--color_letra_blanca);
     display: flex;
@@ -262,11 +266,9 @@ footer{
 
 .titulo_footer{
     font-size: 30px;
-    /* color: var(--color_letra_blanca); */
 }
 
 .contenedor_secciones{
-    border: solid 5px red;
     width: 100vw;
     margin-top: 10px;
     text-align: center;
@@ -282,3 +284,75 @@ footer{
 .nombre{
     font-size: 25px;
 }
+
+.redes_sociales a{
+    color: var(--color_letra_blanca);
+    font-size: 30px;
+}
+
+.redes_sociales a :hover{
+    color: var(--color_titulos);
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 490px){
+    
+
+    /* SECCIÓN TRABAJEMOS JUNTOS */
+    .trabajemos_juntos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trabajemos_juntos h2{
+        width: 100%;
+        font-size: 40px;
+    }
+    
+    .trabajemos_juntos p{
+        width: 100%;
+    }
+
+
+
+
+    /* SECCIÓN LO MÁS DESTACADO */
+    
+    .contenedor_principal h2{
+        font-size: 40px;
+        display: flex;
+      
+    }
+
+    .contenedor_imagenes{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contenedor_imagenes img{
+        width: 100%;
+    }
+
+
+    
+    /* SECCIÓN FOOTER */
+
+    .contenedor_secciones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor_secciones h2{
+        font-size: 15px;
+    }
+
+    .contenedor_secciones a{
+        font-size: 15px;
+    }
+}
+
