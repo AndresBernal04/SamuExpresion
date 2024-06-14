@@ -12,6 +12,7 @@
     --colorBoton: #E6AEEA;
     --colorTitulo: #C224CE; 
     --colortexto: #4B376C;
+    --color_letra_blanca: #ffffff
 
                                                 
 }
@@ -36,7 +37,8 @@ header{
     font-family: var(--tituloProductos);
     font-weight: bold;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 7%;
+    margin-bottom: 7%;
     color: var(--colorTitulo);
     
     
@@ -62,13 +64,161 @@ header{
     gap: 5%;
     color: var(--colortexto);
     background-color: var(--colorBoton);
-    
-    
+
+ 
+}
+
+.añadir:hover {
+    background-color: var(--colorTitulo);
+    color:white
 }
 
 .misProductos img{
     width: 200px;
     height: 200px;
     border-radius: 8%;
+}
+
+.img1{
+ margin-bottom: 50%;
+}
+
+.img2{
+    margin-bottom: 50%;
+   }
+
+   .img3{
+    margin-bottom: 50%;
+   }
+
+   .img4{
+    margin-bottom: 50%;
+   }
+
+
+.img5{
+    margin-bottom: 50%;
+}
+
+.img6{
+    margin-bottom: 50%;
+   }
+
+.img7{
+ margin-bottom: 50%;
+}
+
+.img8{
+    margin-bottom: 50%;
+   }
+
+.img9{
+    margin-bottom: 50%;
+} 
+
+.img10{
+    margin-bottom: 50%;
+   }
+
+   .img11{
+    margin-bottom: 50%;
+   }
+
+   .img12{
+    margin-bottom: 50%;
+   }
+
+
+/* estilos header*/
+
+header{
+    background-color: #4B376C;
+    font-family: var(--text_subtitles);
+    
+}
+
+
+.mi_navbark{
+    font-weight: bold;
+}
+
+.mi_navbark :hover{
+   color: var(--color_titulos);
+}
+
+/*INICIO FOOTER*/
+
+footer{
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    background-color: #4B376C;
+    color: var(--color_letra_blanca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text_subtitles);
+    font-weight: bold;
+
+}
+
+.contenedor_footer{
+    font-family: var(--text_subtitles);
+}
+
+.titulo_footer{
+    font-size: 30px;
+}
+
+.contenedor_secciones{
+    width: 100vw;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor_secciones div{
+    width: 100%;
+    height: 100%;
+}
+
+.nombre{
+    font-size: 25px;
+}
+
+.redes_sociales a{
+    color: var(--color_letra_blanca);
+    font-size: 30px;
+}
+
+.redes_sociales a :hover{
+    color: var(--color_titulos);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 490px){
+    /* SECCIÓN FOOTER */
+
+    .contenedor_secciones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor_secciones h2{
+        font-size: 15px;
+    }
+
+    .contenedor_secciones a{
+        font-size: 15px;
+    }
+}
+
+/*productos*/
+
+@media screen and (max-width: 490px){
+    
+
+   
 }
 
