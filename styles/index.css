@@ -39,163 +39,64 @@ body {
 }
 
 
+:root{
+    --tituloProductos:"Rubik", sans-serif; 
+    --tituloSecundario:'Raleway', sans-serif;
+    --colorBoton: #E6AEEA;
+    --colorTitulo: #C224CE; 
+    --colortexto: #4B376C;
+
+                                                
+}
+
+
+/*cestilos header */
+   
 header{
 <<<<<<< HEAD
     background-color: blueviolet;
     width: 100vw;
     height: 100px;
 }
-=======
-background-color: var(--colorHeader);
-width: 100vw;
-height: auto;
-}
 
-.menuNav {
-border: solid 2px aqua;
-    width: 100%;
-    height: 90%;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-}
+/*titulo productos*/
 
-.listaMenu{
-    display: flex;
-    gap: 50px;
-    list-style: none;
-}
-
-.listaMenu a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 10px;
-}
-
-.carrito{
-    width: 20px;
-}
-
-
-.titulo1{
-    /* border: solid 5px green; */
-    color: var(--colorTitulos);
+.titulo{
+    font-family: var(--tituloProductos);
+    font-weight: bold;
     text-align: center;
-    padding: 18px;
+    margin-top: 5%;
+    color: var(--colorTitulo);
+    
+    
+
+   
 }
 
+.tituloProducto{
+    font-family: var(--tituloSecundario);
+    color: var(--colortexto);
 
-main {
-
-    /* border: solid green; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: auto;
 }
 
+.precio{
+    font-family: var(--tituloSecundario);
+    font-weight: bold;
+    color: var(--colortexto);
 
-.contenedorPrincipal{
-    border: 5px solid red;
-    width: 100%;
-    height: 100%;
-    margin: 25px;
 }
 
-
-.contenedorImagenes{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--colorFondo);
-    /* height: auto;
-    width: 100%; */
+.añadir{
+    font-family: var(--tituloProductos);
+    gap: 5%;
+    color: var(--colortexto);
+    background-color: var(--colorBoton);
+    
+    
 }
 
-.contenedorImagenes img,
-.contenedorImagenes p {
-    width: 30%;
-    height: 100%;
+.misProductos img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8%;
 }
-
-.contenedorImagenes p {
-    width: 50%;
-    height: 100%;
-}
-
-
-
-.textos{
-        width: 70%;
-        height: 65%;
-        /* display: grid;
-        grid-template-rows:
-        grid-template-columns: */
-        gap: 20px;
-}
-
-.titulo2{
-    color: var(--colorTitulos);
-    text-align: center;
-    padding: 15px;
-}
-
-.titulo3{
-    color: var(--colorTitulos);
-    text-align: center;
-    padding: 15px;
-}
-
-
-
-
-
-
-
-/* contenedor slider */
-
-.contenedor-slider{
-    width: 80%;
-    height: 80%;
-    margin: 25px auto;
-    overflow-x: hidden;
-}
-
-.slider{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    animation-name: deslizar;
-    animation-duration: 600s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    }
-
-@keyframes deslizar {
-    from{
-        transform: translateX(0%);
-    }
-    50%{
-        transform: translatex(-150%);       
-    }
-    to{
-        transform: translateX(-300%);
-    }
-}
-
-.contenedor-slider img{
-    height: 100%;
-    width: 100%;
-}
-
-
-
-
->>>>>>> subrama-Rafael
