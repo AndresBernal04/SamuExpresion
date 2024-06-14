@@ -1,0 +1,284 @@
+
+/* IMPORTACIONES - FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+:root{
+    /* PALETA DE COLORES */
+    --color_fondo: #f0f0f0;
+    --color_titulos: #C224CE;
+    --color_menu_footer: #4B376C;
+    --color_pastel: #ecaaee;
+    --color_letra: black;
+    --color_letra_blanca: #f0f0f0;
+
+    /* TIPOGRAFÍAS */
+    --text_title: 'Rubik Mono One', 'sans-serif';
+    --text_subtitles: 'Rubik', 'sans-serif';
+    --text_content: 'Raleway', 'sans-serif';
+
+
+}
+
+
+/* CONDICIONES INICIALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:#f0f0f0;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+
+/* -------------------HEADER------------------ */
+
+
+header{
+    background-color: #4B376C;
+    font-family: var(--text_subtitles);
+    
+}
+
+
+.mi_navbark{
+    font-weight: bold;
+}
+
+.mi_navbark a :hover{
+   color: var(--color_titulos);
+}
+
+
+.baner img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* --------------------MAIN------------------- */
+
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+
+.container_cards{
+    border: solid 5px green;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+}
+
+
+.mis_cards{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.mis_cards img{
+    width: 250px;
+    height: 300px;
+}
+
+
+
+.container_cards{
+    width: 100%;
+    height: auto;
+}
+
+.card_fondo{
+    background-color: var(--color_pastel);
+}
+
+
+.card_titulo{
+    font-size: 30px;
+    color: var(--color_letra);
+    font-family: var(--text_subtitles);
+    font-weight: bold;
+}
+.boton{
+    background-color: var(--color_menu_footer);
+    color: var(--color_letra_blanca);
+    font-family: var(--text_content);
+}
+
+
+
+
+
+.contenido{
+    border: solid red 5px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.trabajemos_juntos{
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    padding: 7%;
+ 
+}
+
+.trabajemos_juntos h2{
+    font-size: 65px;
+    color: var(--color_menu_footer);
+    font-family: var(--text_subtitles);
+    font-weight: bold;
+}
+
+
+.trabajemos_juntos p{
+    font-size: 20px;
+    color: var(--color_letra);
+    font-family: var(--text_content);
+    
+}
+
+
+.contenido2{
+    width: 75%;
+    height: auto;
+}
+
+
+
+
+.contenedor_principal{
+    font-family: var(--text_subtitles);
+}
+
+.contenedor_principal h2{
+    font-family: var(--text_subtitles);
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    color: var(--color_titulos);
+    font-weight: bold;
+}
+
+.contenedor_imagenes{
+    border: 5px solid blue;
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contenedor_imagenes img{
+    width: 70%;
+    height: 90%;
+}
+
+
+.imagenes{
+    display: grid;
+    position: relative;
+}
+
+
+.img1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.img2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.img3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.img4{
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+
+.nombre_producto{
+    font-size: 25px;
+    font-family: var(--text_subtitles);
+    color: var(--color_titulos);
+    font-weight: bold;
+}
+
+.precio_producto{
+    font-size: 20px;
+    font-family: var(--text_subtitles);
+    color: var(--color_letra);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------FOOTER------------------ */
+
+footer{
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    border: 5px solid red;
+    background-color: #4B376C;
+    color: var(--color_letra_blanca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text_subtitles);
+    font-weight: bold;
+}
+
+.contenedor_footer{
+    font-family: var(--text_subtitles);
+}
+
+.titulo_footer{
+    font-size: 30px;
+    /* color: var(--color_letra_blanca); */
+}
+
+.contenedor_secciones{
+    border: solid 5px red;
+    width: 100vw;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor_secciones div{
+    width: 100%;
+    height: 100%;
+}
+
+.nombre{
+    font-size: 25px;
+}
