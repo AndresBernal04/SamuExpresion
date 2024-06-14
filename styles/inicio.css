@@ -19,8 +19,6 @@
     --text_title: 'Rubik Mono One', 'sans-serif';
     --text_subtitles: 'Rubik', 'sans-serif';
     --text_content: 'Raleway', 'sans-serif';
-
-
 }
 
 
@@ -46,7 +44,7 @@ body{
 
 
 header{
-    background-color: #4B376C;
+    background-color: var(--color_menu_footer);
     font-family: var(--text_subtitles);
     
 }
