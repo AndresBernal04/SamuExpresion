@@ -1,41 +1,8 @@
-<<<<<<< HEAD
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     
-=======
-/* importaciones de fuente */
-@import url('https://fonts.cdnfonts.com/css/ysabeau-sc');
-@import url('https://fonts.cdnfonts.com/css/quito');
-
-
-:root{
-
-    /* paleta de colores */
-
-    --colorHeader: #4B376C;
-    --colorFooter: #4B376C;
-    --colorFondo: #E7B5D0;
-    --colorTitulos: #C224CE;
-
-    /* fuentes */
-    --textTitle: 'Ysabeau SC', sans-serif;
-    --textContent: 'Quito', sans-serif
-
-}
-/* margenes */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 20px;
-    overflow-x: hidden;
->>>>>>> subrama-Rafael
 }
 
 
@@ -50,10 +17,14 @@ body {
 }
 
 
+body{
+    overflow-x: hidden;
+}
+
+
 /*cestilos header */
    
 header{
-<<<<<<< HEAD
     background-color: blueviolet;
     width: 100vw;
     height: 100px;
@@ -100,3 +71,4 @@ header{
     height: 200px;
     border-radius: 8%;
 }
+
