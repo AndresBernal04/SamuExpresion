@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+:root{
+    --tituloProductos:"Rubik", sans-serif; 
+    --tituloSecundario:'Raleway', sans-serif;
+    --colorBoton: #E6AEEA;
+    --colorTitulo: #C224CE; 
+    --colortexto: #4B376C;
+    --color_letra_blanca: #ffffff
+
+                                                
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* ESTILOS HEADER*/
+header{
+    background-color: #4B376C;
+    font-family: var(--text_subtitles);
+    
+}
+
+
+.mi_navbark{
+    font-weight: bold;
+}
+
+.mi_navbark :hover{
+   color: var(--color_titulos);
+}
+
+
+/*ESTILOS MAIN*/
+
+
+
+
+/*ESTILOS FOOTER*/
+
+footer{
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    background-color: #4B376C;
+    color: var(--color_letra_blanca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text_subtitles);
+    font-weight: bold;
+
+}
+
+.contenedor_footer{
+    font-family: var(--text_subtitles);
+}
+
+.titulo_footer{
+    font-size: 30px;
+}
+
+.contenedor_secciones{
+    width: 100vw;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor_secciones div{
+    width: 100%;
+    height: 100%;
+}
+
+.nombre{
+    font-size: 25px;
+}
+
+.redes_sociales a{
+    color: var(--color_letra_blanca);
+    font-size: 30px;
+}
+
+.redes_sociales a :hover{
+    color: var(--color_titulos);
+    cursor: pointer;
+}
